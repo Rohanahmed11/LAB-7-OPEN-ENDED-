@@ -3,16 +3,16 @@ import java.util.Scanner;
 
 public class GuessNumber {
     public static void main(String[] args) {
-        int numberToGuess = 1; 
+        int numberToGuess = 4; 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Guess the number (1-10): ");
+        System.out.print("Guess the number (1-5): ");
         int userGuess = scanner.nextInt();
 
         if (userGuess == numberToGuess) {
-            System.out.println("Congratulations! You guessed it right!");
+            System.out.println("Congratulations! ");
         } else {
-            System.out.println("Sorry, the correct number was " + numberToGuess);
+            System.out.println("Sorry, correct number was " + numberToGuess);
         }
         
         scanner.close();
